@@ -1,0 +1,39 @@
+<?php
+	session_start();
+	if(isset($_SESSION['username'])){
+	
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<body>
+	<fieldset>
+	<table>
+		<tr >
+		<h1 align="middle"><font size="32">Welcome Bob</font></h1>
+		</tr>
+		<tr >
+		<td align="middle"><a href>Profile</a><td><br/>
+		</tr>
+		<tr >
+		<td align="middle"><a href>ChangePassword</a><td><br/>
+		</tr>
+		<tr>
+		<td align="middle"><a href>ViewUser</a><td><br/>
+		</tr>
+		<tr >
+		<td align="middle"><a href>LogOut</a><td><br/>
+		</tr>
+	</table>
+	</fieldset>
+</body>
+</head>
+</html>
+<?php
+	}
+	else
+	{
+		header('location:2.html');
+	}
+
+?>
